@@ -1,0 +1,29 @@
+:root {
+  --primary: #0000ff;
+  --white: #ffffff;
+  --light: #46b9e6;
+  --dark: #000000;
+  --dark-light: #D9008D;
+  --gray:#F4F4F4;
+  --btn-border-radius: 50px;
+  --btn-border: 0px;
+  --input-box-border-radius:70px;
+  --input-box-bg-color:#a5e7e7;
+}
+body,h1,h2,h3,h4,h5,p,section,div,ul,li,ol,section{
+  color: var(--dark);
+  font-size: 1rem;
+}
+p{
+  font-size: 18px; 
+  font-weight: 500;  
+  line-height: 24px; 
+}
+body{
+  font-family: JioType,helvetica,arial,sans-serif;
+  border-radius: 50px;
+}
+section{
+  padding-top: 50px;
+  padding-bottom: 50px;
+}

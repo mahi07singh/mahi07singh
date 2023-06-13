@@ -1,0 +1,30 @@
+.navbar{
+    background-color: #0F3CC9;   
+}
+.logo{
+    width: 40px;
+    height: 40px;
+    border-radius: 12px;
+    fill: currentcolor;
+    margin: 5px;
+    margin-left: 0;
+}
+.menuBar{
+    color: #ffffff!important;
+    font-family: JioType,helvetica,arial,sans-serif;
+    font-weight: 700 !important;
+    text-transform: none !important;
+    font-size: 1rem;
+    letter-spacing: -.08px;
+    line-height: 1.5;
+    margin-right: 10px;
+}
+.inputBox{
+    border-radius: 70px !important;
+    background: #a5e7e7 !important;
+    color: #ffffff !important;
+    width: 207px !important;
+}
+.headIcon{
+    color: #ffffff;
+}
