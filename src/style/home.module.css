@@ -7,11 +7,23 @@
     height: 500px;
     object-fit: cover;
 }
-.Icon{
+.IconOne{
+    margin: 0;
     font-size: 50px;
     text-align: center;
     border-radius: 50%;
     color: var(--dark);
+}
+.Icon{
+    margin-left: 10px;
+    font-size: 50px;
+    text-align: center;
+    border-radius: 50%;
+    color: var(--dark);
+}
+.IconOne:hover{
+    background-color: var(--primary);
+    color: var(--white);
 }
 .Icon:hover{
     background-color: var(--primary);
@@ -143,4 +155,43 @@
     font-weight: 900;
     line-height: 40px;
     color: var(--white);
+}
+.footerSection{
+    background-color: var(--primary);
+}
+.footerHeading{
+    font-size: 64px;
+    font-weight: 900;
+    line-height: 68px;
+    color: var(--white);
+    text-align: center;
+}
+.footerPara{
+    text-align: center;
+    color: var(--white);
+}
+.footercoloum{
+    text-align: center;
+}
+.footerButtonone{
+    border-radius: var(--btn-border-radius) !important;
+    background-color: transparent !important;
+    margin: 0;
+}
+.footerButtonone:hover{
+    background-color: transparent !important;
+    border: 1px solid white !important;
+}
+.footerButton{
+    background-color: transparent !important;
+    margin-left: 15px;
+    border-radius: var(--btn-border-radius) !important;
+}
+.footerButton:hover{
+    background-color: transparent !important;
+    border: 1px solid white !important;
+}
+.footerIcon{
+    margin: 5px;
+    font-size: 25px;
 }

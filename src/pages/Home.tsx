@@ -1,7 +1,12 @@
 import Carousel from "react-bootstrap/Carousel";
 import HomeStyle from "../style/home.module.css";
 import { Button, Card, Col, Container, Form, Row } from "react-bootstrap";
-import { BsFillPersonVcardFill } from "react-icons/bs";
+import {
+  BsFillPersonVcardFill,
+  BsFillQuestionSquareFill,
+} from "react-icons/bs";
+import { AiFillMessage, AiOutlineAppstoreAdd } from "react-icons/ai";
+import { IoIosCall } from "react-icons/io";
 
 const Home = () => {
   return (
@@ -48,22 +53,11 @@ const Home = () => {
       <section className={HomeStyle.sectionTwo}>
         <Container>
           <Row className="justify-content-center">
-            <Col className={HomeStyle.colIcon} md={2}>
+            <Col className={HomeStyle.colIcon} md={10}>
+              <BsFillPersonVcardFill className={HomeStyle.IconOne} />
               <BsFillPersonVcardFill className={HomeStyle.Icon} />
-            </Col>
-            <Col className={HomeStyle.colIcon} md={2}>
               <BsFillPersonVcardFill className={HomeStyle.Icon} />
-            </Col>
-            <Col className={HomeStyle.colIcon} md={2}>
               <BsFillPersonVcardFill className={HomeStyle.Icon} />
-            </Col>
-            <Col className={HomeStyle.colIcon} md={2}>
-              <BsFillPersonVcardFill className={HomeStyle.Icon} />
-            </Col>
-            <Col className={HomeStyle.colIcon} md={2}>
-              <BsFillPersonVcardFill className={HomeStyle.Icon} />
-            </Col>
-            <Col className={HomeStyle.colIcon} md={2}>
               <BsFillPersonVcardFill className={HomeStyle.Icon} />
             </Col>
           </Row>
@@ -296,30 +290,79 @@ const Home = () => {
           <Row>
             <Col>
               <Card>
-                <Card.Img variant="top" src={require("../images/firstCol.png")} />
+                <Card.Img
+                  variant="top"
+                  src={require("../images/firstCol.png")}
+                />
                 <Card.Body className={HomeStyle.bodycard}>
-                  <h4 className={HomeStyle.headingGet}>Get free delivery on your first order</h4>
-                  <Button className={HomeStyle.btnButton}>Order on NetMeds</Button>
+                  <h4 className={HomeStyle.headingGet}>
+                    Get free delivery on your first order
+                  </h4>
+                  <Button className={HomeStyle.btnButton}>
+                    Order on NetMeds
+                  </Button>
                 </Card.Body>
               </Card>
             </Col>
             <Col>
               <Card>
-                <Card.Img variant="top" src={require("../images/secondCol.png")} />
+                <Card.Img
+                  variant="top"
+                  src={require("../images/secondCol.png")}
+                />
                 <Card.Body className={HomeStyle.bodycard}>
-                  <h4 className={HomeStyle.headingGet} >Get free delivery on your first order</h4>
-                  <Button className={HomeStyle.btnButton}>Go to Urban Ladder</Button>
+                  <h4 className={HomeStyle.headingGet}>
+                    Get free delivery on your first order
+                  </h4>
+                  <Button className={HomeStyle.btnButton}>
+                    Go to Urban Ladder
+                  </Button>
                 </Card.Body>
               </Card>
             </Col>
             <Col>
               <Card>
-                <Card.Img variant="top" src={require("../images/threeCol.png")} />
+                <Card.Img
+                  variant="top"
+                  src={require("../images/threeCol.png")}
+                />
                 <Card.Body className={HomeStyle.bodycard}>
-                  <h4 className={HomeStyle.headingGet}>Get free delivery on your first order</h4>
+                  <h4 className={HomeStyle.headingGet}>
+                    Get free delivery on your first order
+                  </h4>
                   <Button className={HomeStyle.btnButton}>Shop at Ajio</Button>
                 </Card.Body>
               </Card>
+            </Col>
+          </Row>
+        </Container>
+      </section>
+      <section className={HomeStyle.footerSection}>
+        <Container>
+          <Row>
+            <Col>
+              <h2 className={HomeStyle.footerHeading}>Need guidance?</h2>
+              <p className={HomeStyle.footerPara}>We’d love to help you.</p>
+            </Col>
+          </Row>
+          <Row className="justify-content-center">
+            <Col className={HomeStyle.footercoloum}>
+              <Button className={HomeStyle.footerButtonone}>
+                <BsFillQuestionSquareFill className={HomeStyle.footerIcon}/>
+                Support
+              </Button>
+              <Button className={HomeStyle.footerButton}>
+                <AiFillMessage className={HomeStyle.footerIcon}/>
+                Chat with us
+              </Button>
+              <Button className={HomeStyle.footerButton}>
+                <IoIosCall className={HomeStyle.footerIcon}/>
+                call Us
+              </Button>
+              <Button className={HomeStyle.footerButton}>
+                <AiOutlineAppstoreAdd className={HomeStyle.footerIcon}/>
+                Find a Store
+              </Button>
             </Col>
           </Row>
         </Container>
