@@ -1,7 +1,7 @@
 import { createSlice } from "@reduxjs/toolkit";
-import { authorizedToken, signup } from "../../data-access/api/auth-api";
-import getDecodedToken from "../../helpers/auth/decode-token";
-import { ResponseType } from "../../interfaces/user/response";
+import { authorizedToken, signup } from "../data-access/api/auth-api";
+import getDecodedToken from "../helpers/auth/decode-token";
+import { ResponseType } from "../interfaces/user/response";
 
 const authLifeCycles = {
     [authorizedToken.fulfilled as any] : (state:any, action:any) => {

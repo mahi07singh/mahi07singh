@@ -1,5 +1,5 @@
 import { createSlice } from "@reduxjs/toolkit";
-import { ResponseType } from "../../interfaces/user/response"
+import { ResponseType } from "../interfaces/user/response"
 
 const accountLifeCycles = {
 
