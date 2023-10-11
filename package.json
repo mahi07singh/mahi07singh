@@ -53,6 +53,7 @@
     ]
   },
   "devDependencies": {
-    "@types/react-headroom": "^3.2.0"
+    "@types/react-headroom": "^3.2.0",
+    "@types/react-router-dom": "^5.3.3"
   }
 }

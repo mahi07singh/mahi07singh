@@ -1,14 +1,35 @@
 import Carousel from "react-bootstrap/Carousel";
 import HomeStyle from "../style/home.module.css";
-import { Button, Card, Col, Container, Form, Row } from "react-bootstrap";
+import {
+  Button,
+  Card,
+  Col,
+  Container,
+  OverlayTrigger,
+  Form,
+  Row,
+  Popover,
+} from "react-bootstrap";
 import {
   BsFillPersonVcardFill,
   BsFillQuestionSquareFill,
 } from "react-icons/bs";
 import { AiFillMessage, AiOutlineAppstoreAdd } from "react-icons/ai";
 import { IoIosCall } from "react-icons/io";
+import { HomeHelper } from "../helpers/home-helper";
 
 const Home = () => {
+  const { handleButtonClick, showPopover } = HomeHelper();
+
+  const popover = (
+    <Popover id="popover-basic">
+      <Popover.Header as="h3">Important Message</Popover.Header>
+      <Popover.Body>
+        this is require form <strong>Premium</strong> then you will use this
+        feacher. okey.
+      </Popover.Body>
+    </Popover>
+  );
   return (
     <>
       <section className={HomeStyle.sectionOne}>
@@ -100,7 +121,19 @@ const Home = () => {
           </Row>
           <Row className="justify-content-center">
             <Col className={HomeStyle.coloumn} xs lg="4">
-              <Button className={HomeStyle.btnButton}>Explore Now</Button>
+              <OverlayTrigger
+                trigger="click"
+                placement="right"
+                overlay={popover}
+                show={showPopover}
+              >
+                <Button
+                  className={HomeStyle.btnButton}
+                  onClick={handleButtonClick}
+                >
+                  Explore Now
+                </Button>
+              </OverlayTrigger>
             </Col>
           </Row>
         </Container>
@@ -182,19 +215,6 @@ const Home = () => {
                 and services.
               </p>
             </Col>
-          </Row>
-        </Container>
-      </section>
-      <section className={HomeStyle.sectionThree}>
-        <Container>
-          <Row>
-            <Col md={4}>
-              <h3 className={HomeStyle.vedioHead}>
-                Explore a world of exclusive, binge-worthy content
-              </h3>
-              <Button className={HomeStyle.btnButton}>Know More</Button>
-            </Col>
-            <Col md={8}></Col>
           </Row>
         </Container>
       </section>
@@ -348,19 +368,19 @@ const Home = () => {
           <Row className="justify-content-center">
             <Col className={HomeStyle.footercoloum}>
               <Button className={HomeStyle.footerButtonone}>
-                <BsFillQuestionSquareFill className={HomeStyle.footerIcon}/>
+                <BsFillQuestionSquareFill className={HomeStyle.footerIcon} />
                 Support
               </Button>
               <Button className={HomeStyle.footerButton}>
-                <AiFillMessage className={HomeStyle.footerIcon}/>
+                <AiFillMessage className={HomeStyle.footerIcon} />
                 Chat with us
               </Button>
               <Button className={HomeStyle.footerButton}>
-                <IoIosCall className={HomeStyle.footerIcon}/>
+                <IoIosCall className={HomeStyle.footerIcon} />
                 call Us
               </Button>
               <Button className={HomeStyle.footerButton}>
-                <AiOutlineAppstoreAdd className={HomeStyle.footerIcon}/>
+                <AiOutlineAppstoreAdd className={HomeStyle.footerIcon} />
                 Find a Store
               </Button>
             </Col>

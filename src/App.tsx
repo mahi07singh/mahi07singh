@@ -1,10 +1,10 @@
 import "./App.css";
-import Header from "./component/common/header";
+import Home from "./pages/Home";
 import Footer from "./component/common/footer";
 import { Route, Routes } from "react-router-dom";
-import Home from "./pages/home";
-import Headroom from "react-headroom";
+import Header from "./component/common/header";
 import Auth from "./pages/auth";
+import Headroom from "react-headroom";
 
 const App = () => {
   return (
