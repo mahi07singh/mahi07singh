@@ -8,9 +8,9 @@ import './App.css';
 
 ReactDOM.render(
   <BrowserRouter>
-  <Provider store={store}>
+  {/* <Provider store={store}> */}
     <App />
-  </Provider>
+  {/* </Provider> */}
   </BrowserRouter>,
   document.getElementById("root") as HTMLElement
 );
